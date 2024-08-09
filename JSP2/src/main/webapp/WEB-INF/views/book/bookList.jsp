@@ -58,7 +58,6 @@
   <button id="btn">js 테스트</button>
 
 
-
 <%-- webapp 폴더를 기준(/)으로 js 파일 경로 작성 --%>
 <script src = "/resources/js/book.js"></script>
 </body>
