@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'HancomSans-Light';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-1@1.0/HancomSans-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Instagram Sans';
+  src: url('Instagram Sans.woff') format('woff');
+}
+
+body {
+  font-family: 'Instagram Sans', 'HancomSans-Light', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, rgba(229, 93, 135, 0.9), rgba(95, 195, 228, 0.9));
+  color: #fff;
+}
+
+.container {
+  font-family: 'Instagram Sans';
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  width: 80%;
+  max-width: 100%;
+  min-height: 200px;
+}
+
+h1, h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-family: 'Instagram Sans';
+}
+
+h2 {
+  font-family: 'HancomSans-Light';
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.menu-item, .button {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.menu-item:hover, .button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+a {
+  font-family: 'Instagram Sans';
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 4px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  padding: 1em 1.5em;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.button-first {
+  background: linear-gradient(to right, #e55d87, #5fc3e4);
+  box-shadow: 0 2px 25px rgba(229, 93, 135, 0.5);
+}
+
+.button-first:active {
+  background: linear-gradient(to right, rgba(229, 93, 135, 0.9), rgba(95, 195, 228, 0.9));
+}
+
+.button-second {
+  background: linear-gradient(to right, #1488cc, #2b32b2);
+  box-shadow: 0 2px 25px rgba(20, 137, 204, 0.5);
+}
+
+.button-second:active {
+  background: linear-gradient(to right, rgba(20, 136, 204, 0.9), rgba(43, 50, 178, 0.9));
+}
+
+.button:focus {
+  outline: none;
+}
+
+particle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  background: #000;
+}
+
+.button-container-1 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin: 6vh auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.button-container-1 button {
+  width: 101%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  border: none;
+  -webkit-mask: url('https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png');
+  mask: url('https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png');
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+}
+
+.button-container-1 button:hover {
+  animation: ani 1.7s steps(22) forwards;
+}
+
+@keyframes ani {
+  /* Define your animation here */
+}
