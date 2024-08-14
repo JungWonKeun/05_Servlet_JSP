@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>채팅방</title>
+    
 </head>
 <body>
     <h1>안녕</h1>
     <a href="chat">접속</a>
+    <script src="/resources/js/script.js"></script>
 </body>
 </html>
